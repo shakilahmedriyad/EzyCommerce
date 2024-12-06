@@ -1,7 +1,12 @@
-export default function CategoryId() {
+export default async function CategoryId({
+  params,
+}: {
+  params: Promise<{ categoriesId: string }>;
+}) {
+  const { categoriesId } = await params;
   return (
     <div>
-      <h1>hello</h1>
+      <h1>{categoriesId}</h1>
     </div>
   );
 }

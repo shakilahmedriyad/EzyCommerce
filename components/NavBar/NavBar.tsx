@@ -26,11 +26,6 @@ export default function NavBar() {
       isActive: pathName == "/categories",
     },
     {
-      label: "About Us",
-      slug: "/about-us",
-      isActive: pathName == "/about-us",
-    },
-    {
       label: "Contact Us",
       slug: "/contact-us",
       isActive: pathName == "/contact-us",

@@ -8,5 +8,5 @@ body {
 }
 
 .headline1 {
-  @apply text-4xl font-medium;
+  @apply text-3xl font-medium;
 }
