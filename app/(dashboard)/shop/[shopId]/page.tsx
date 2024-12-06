@@ -12,8 +12,6 @@ export default async function ShopId({
     `${process.env.NEXT_PUBLIC_API_URL}/api/${shopId}/product`
   );
 
-  const product = response.data;
-
   return (
     <MainLayout>
       {response.data.length == 0 ? (
@@ -22,7 +20,7 @@ export default async function ShopId({
         </div>
       ) : (
         <div>
-          {product}
+          <h1>products</h1>
         </div>
       )}
     </MainLayout>
