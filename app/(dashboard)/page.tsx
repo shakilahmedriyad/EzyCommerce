@@ -24,12 +24,14 @@ export default async function Home() {
     .slice(0, 5)
     .map(
       (item: {
+        id: string;
         name: string;
         price: number;
         category: { name: string };
         image: { url: string }[];
       }) => {
         return {
+          id: item.id,
           name: item.name,
           price: item.price,
           category: item.category.name,

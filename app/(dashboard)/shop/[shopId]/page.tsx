@@ -15,12 +15,14 @@ export default async function ShopId({
   );
   const products: ProductType[] = response.data.map(
     (item: {
+      id: string;
       name: string;
       price: number;
       category: { name: string };
       image: { url: string }[];
     }) => {
       return {
+        id: item.id,
         name: item.name,
         price: item.price,
         category: item.category.name,
